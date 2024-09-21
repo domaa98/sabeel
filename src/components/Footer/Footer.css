@@ -1,0 +1,134 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f8f8f8;
+    align-items: center;
+}
+.input-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.footer .input-group{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+    border: 1px solid #00000050;
+    border-radius: 40px;
+    padding: 8px 10px;
+    height: 50px;
+}
+.footer .input-group input{
+    flex: 2;
+    margin-bottom: 12px;
+    text-align: end;
+    outline: none;
+    border: none;
+    font-size:14px ;
+}
+.footer .input-group button{
+    flex: 1;
+    border-radius:20px ;
+}
+
+.content-section {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.footer-section .links{
+    margin-right: 0;
+}
+.logo img {
+    width: 100px; /* Adjust size as needed */
+    margin-bottom: 15px;
+}
+
+.links {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.footer-section .links a {
+    text-decoration: none;
+    color: #000;
+}
+
+.social-media {
+    display: flex;
+    gap: 15px;
+}
+
+.social-media a{
+    color:#98A2B3;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+
+
+@media (min-width: 555px) and (max-width: 779px) {
+    
+    .footer-section .links{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+
+    
+.footer .input-group{
+
+    width: 300px;
+    border-radius: 40px;
+    padding: 8px 10px;
+    height: 50px;
+}
+.footer .input-group input{
+  
+    font-size:12px ;
+}
+.footer .input-group button{
+    flex: 1;
+    border-radius:20px ;
+    font-size: 10px;
+}
+}
+
+
+@media (max-width: 555px) {
+    .footer-section .links{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+
+
+    .footer {
+        display: flex;
+        flex-direction: column-reverse;
+      
+    }
+    .footer .input-group{
+
+        width: 300px;
+        border-radius: 40px;
+        padding: 8px 10px;
+        height: 50px;
+    }
+    .footer .input-group input{
+      
+        font-size:12px ;
+    }
+    .footer .input-group button{
+        flex: 1;
+        border-radius:20px ;
+        font-size: 10px;
+    }
+}

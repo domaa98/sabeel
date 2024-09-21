@@ -1,0 +1,46 @@
+.SecondSection .cards{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.SecondSection{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.SecondSection .mainTitle{
+    font-weight: 700;
+    font-size: 40px;
+}
+
+
+/* Styles for medium devices (tablets) */
+@media (min-width: 780px) and (max-width: 950px) {
+    .SecondSection .mainTitle{
+        font-size: 35px;
+    }
+}
+
+
+@media (min-width: 555px) and (max-width: 779px) {
+    .SecondSection .mainTitle{
+        font-size: 35px;
+    }
+}
+
+
+@media (max-width: 555px) {
+    .SecondSection .mainTitle{
+        font-size: 30px;
+    }
+    .SecondSection .cards{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+}

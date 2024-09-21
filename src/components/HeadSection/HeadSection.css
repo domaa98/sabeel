@@ -1,0 +1,282 @@
+.headSectionImage{
+
+width: 100%;
+
+border-radius: 24px;
+background: url('../../assets/photo1.jpg') no-repeat center center/cover;
+opacity: 0.85;
+height: 800px;
+}
+
+.headSectionImage .headSectionText , .headSectionImage .headSectionText2{
+    
+    text-align: center;
+    color: white;
+}
+.headSectionImage .headSectionText{
+    font-size: 64px;
+    margin-top: 100px;
+}
+.headSectionImage .headSectionText2{
+    font-size: 32px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+
+.headSectionImage .buttonLinks{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
+    padding-bottom: 20px;
+}
+
+.headSectionImage .buttons{
+    text-align: center;  
+    margin-top: 100px;
+    margin-bottom: 25px;
+}
+
+.headSectionImage .buttons a{
+
+  border: 1px solid #fff;
+  border-radius: 20px;
+  padding: 5px 60px;
+  margin: 0 20px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+
+
+.headSectionImage .inputText{
+
+border: 1px solid #fff;
+margin: 0 180px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 10px 15px;
+border-radius: 40px;
+backdrop-filter: blur(8px);
+width: 800px;
+
+}
+
+.headSectionImage .inputText input{
+
+    border-radius: 20px;
+    padding: 5px 15px;
+    cursor: pointer;
+    font-size: 18px;
+    background: transparent;
+    outline: none;
+    border: none;
+    text-align: right;
+    color: #fff;
+    width: 50%;
+
+}
+
+
+.headSectionImage .inputText a{
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: #fff;
+    color: black;
+    padding: 10px 25px;
+}
+
+
+
+
+
+
+/* Styles for medium devices (tablets) */
+@media (min-width: 780px) and (max-width: 950px) {
+   
+    .headSectionImage .headSectionText{
+        font-size: 46px;
+    }
+    .headSectionImage .headSectionText2{
+        font-size: 23px;
+      
+    }
+
+    
+.headSectionImage .buttonLinks{
+    width: 100%;
+    height: 100px;
+    padding-bottom: 20px;
+}
+
+.headSectionImage .buttons{
+    margin-top: 100px;
+    margin-bottom: 25px;
+}
+
+.headSectionImage .buttons a{
+
+  border: 1px solid #fff;
+  border-radius: 20px;
+  padding: 5px 50px;
+  margin: 0 16px;
+  font-size: 16px;
+}
+
+
+
+.headSectionImage .inputText{
+
+margin: 0 180px;
+padding: 10px 15px;
+border-radius: 40px;
+width: 600px;
+
+}
+
+.headSectionImage .inputText input{
+
+    border-radius: 20px;
+    padding: 5px 15px;
+    width: 50%;
+
+}
+
+
+.headSectionImage .inputText a{
+    border-radius: 20px;
+    font-size: 16px;
+    padding: 8px 22px;
+}
+
+}
+
+
+@media (min-width: 555px) and (max-width: 779px) {
+   
+    .headSectionImage .headSectionText{
+        font-size: 36px;
+    }
+    .headSectionImage .headSectionText2{
+        font-size: 18px;
+      
+    }
+
+    headSectionImage .buttonLinks{
+        width: 100%;
+        height: 100px;
+        padding-bottom: 20px;
+    }
+    
+    .headSectionImage .buttons{
+        margin-top: 100px;
+        margin-bottom: 25px;
+    }
+    
+    .headSectionImage .buttons a{
+    
+      border: 1px solid #fff;
+      border-radius: 20px;
+      padding: 5px 40px;
+      margin: 0 16px;
+      font-size: 16px;
+    }
+    
+    
+    
+    .headSectionImage .inputText{
+    
+    margin: 0 180px;
+    padding: 10px 15px;
+    border-radius: 40px;
+    width: 450px;
+    
+    }
+    
+    .headSectionImage .inputText input{
+    
+        border-radius: 20px;
+        padding: 5px 15px;
+        width: 50%;
+    
+    }
+    
+    
+    .headSectionImage .inputText a{
+        border-radius: 20px;
+        font-size: 16px;
+        padding: 8px 22px;
+    }
+
+}
+
+
+@media (max-width: 555px) {
+   
+    .headSectionImage .headSectionText{
+        font-size: 22px;
+    }
+    .headSectionImage .headSectionText2{
+        font-size: 13px;
+      
+    }
+
+    
+    headSectionImage .buttonLinks{
+        width: 100%;
+        height: 100px;
+        padding-bottom: 20px;
+    }
+    
+    .headSectionImage .buttons{
+        margin-top: 100px;
+        margin-bottom: 25px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .headSectionImage .buttons a{
+    
+      border: 1px solid #fff;
+      border-radius: 20px;
+      padding: 5px 40px;
+      margin: 0 16px;
+      font-size: 16px;
+    }
+    
+    
+    
+    .headSectionImage .inputText{
+    
+    margin: 0 180px;
+    padding: 10px 15px;
+    border-radius: 40px;
+    width: 200px;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+    
+    }
+    
+    .headSectionImage .inputText input{
+    
+        border-radius: 10px;
+        font-size: 14px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    
+    .headSectionImage .inputText a{
+        border-radius: 20px;
+        font-size: 14px;
+        padding: 5px 20px;
+    }
+
+}
