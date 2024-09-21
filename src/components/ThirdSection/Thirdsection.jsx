@@ -1,5 +1,6 @@
 import './Thirdsection.css'
-import image from '../../assets/thirdsection.jpg'
+import image from '../../assets/thirdsection.jpg';
+
 const Thirdsection = () => {
   return (
     <div className='thirdSection' id='About_us'>

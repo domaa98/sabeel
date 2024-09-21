@@ -19,7 +19,7 @@ const HeadSection = () => {
         </div>
 
          <div className="inputText">
-           <a>اطلب عرض سعر</a>
+           <a href='#Contact_us'>اطلب عرض سعر</a>
            <input type="text" name="" id="" placeholder='اطلب عرض مخصص' />
         </div>
       </div>

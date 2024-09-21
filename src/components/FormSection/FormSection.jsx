@@ -1,29 +1,39 @@
 import './FormSection.css'
-import { useState } from 'react';
 import formimage from "../../assets/fourthsection.jpg";
+import emailjs from '@emailjs/browser';
+import { useRef } from 'react';
+import Swal from 'sweetalert2';
+
 
 const FormSection = () => {
-
-    const [formData, setFormData] = useState({
-        name: '',
-        phone: '',
-        message: '',
-      });
     
-      const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormData((prevData) => ({
-          ...prevData,
-          [name]: value,
-        }));
-      };
+      const form = useRef();
     
       const handleSubmit = (e) => {
         e.preventDefault();
-        console.log('Form submitted:', formData);
+        console.log('Form submitted:', form);
         //rest of logic
+        emailjs
+      .sendForm('service_cvncjqn', 'template_n0r83ro', form.current, {
+        publicKey: 'K4R4vwAFyIy2Fe2CZ',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+          Swal.fire({
+            position: "top-end",
+            icon: "success",
+            title: "Your message sent successfully",
+            showConfirmButton: false,
+            timer: 1500
+          });
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+      e.target.reset();
       };
-
 
   return (
     <div className="containerr" id='Contact_us'>
@@ -37,7 +47,7 @@ const FormSection = () => {
       <div className="section form-section">
         <p className='first-title'>نحن لا نقوم فقط بنقل البضائع، بل نبني علاقات طويلة الأمد مع عملائنا</p>
         <p className='second-title'>تواصل معنا لمعرفة كيف يمكننا أن نكون جزءًا من نجاحك</p>
-        <form onSubmit={handleSubmit}>
+        <form ref={form} onSubmit={handleSubmit}>
           <div>
             <label htmlFor="name">الاسم بالكامل</label>
             <input
@@ -45,8 +55,7 @@ const FormSection = () => {
               id="name"
               name="name"
               placeholder='ادخل اسمك'
-              value={formData.name}
-              onChange={handleChange}
+            
               required
             />
           </div>
@@ -57,8 +66,7 @@ const FormSection = () => {
               id="phone"
               name="phone"
               placeholder='ادخل رقم الهاتف'
-              value={formData.phone}
-              onChange={handleChange}
+             
               required
             />
           </div>
@@ -68,8 +76,7 @@ const FormSection = () => {
               id="message"
               name="message"
               placeholder='طلبك'
-              value={formData.message}
-              onChange={handleChange}
+              
               required
             />
           </div>
