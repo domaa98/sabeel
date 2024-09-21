@@ -3,6 +3,7 @@ import './PageNavbar.css';
 import { AiOutlineMenu } from "react-icons/ai";
 import { TfiClose } from "react-icons/tfi";
 import Logo from "../../assets/logo1.jpg";
+import { Link } from 'react-router-dom';
 
 const PageNavbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -18,12 +19,16 @@ const PageNavbar = () => {
         </div>
         <div className="navbar-content">
           <div className="image">
-            <a href="#Home">
+            <Link to='/'>
+            <a href="#">
               <img src={Logo} className="img" alt=""></img>
             </a>
+            </Link>
           </div>
-          <div className="links">
-            <a href="#Home">الرئيسية</a>
+          <div className="linkss">
+            <Link to='/'>
+            <a href="#">الرئيسية</a>
+            </Link>
             <a href="#Services">الخدمات</a>
             <a href="#About_us">من نحن</a>
             <a href="#Contact_us">تواصل معنا</a>
@@ -38,7 +43,9 @@ const PageNavbar = () => {
       <div className="drop-down">
         {openMenu ? (
           <div className="links-drop-down">
+            <Link to='/'>
             <a href="#Home">الرئيسية</a>
+            </Link>
             <a href="#Services">الخدمات</a>
             <a href="#About_us">من نحن</a>
             <a href="#Contact_us">تواصل معنا</a>

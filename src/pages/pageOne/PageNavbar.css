@@ -39,7 +39,7 @@ a {
     padding: 0 50px;
   }
   
-  .links {
+  .linkss {
     margin-right: 70px;
     width: 450px;
     display: flex;
@@ -47,7 +47,7 @@ a {
     flex-direction: row-reverse;
     color: #fff;
   }
-  .links a {
+  .linkss a {
     color: #000;
   }  
   .navbarr .contact-us {
@@ -72,7 +72,7 @@ a {
     .navbar-content {
       justify-content: space-between;
     }
-    .links {
+    .linkss {
         margin-right: 60px;
         width: 350px;
       }
@@ -80,7 +80,7 @@ a {
   
   @media (max-width: 880px) {
    
-    .links {
+    .linkss {
         margin-right: 40px;
         width: 300px;
       }
@@ -99,7 +99,7 @@ a {
   }
 
   @media (max-width: 767px) {
-    .links {
+    .linkss {
       display: none;
     }
     .navbarr .contact-us a{

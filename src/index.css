@@ -8,6 +8,9 @@
   scroll-behavior: smooth;
 
 }
+html{
+  overflow-x: hidden;
+}
 
 a{
   text-decoration: none;
