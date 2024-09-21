@@ -2,6 +2,7 @@ import Footer from "../../components/Footer/Footer";
 import PageNavbar from "../pageOne/PageNavbar";
 import "./PageThree.css";
 import pageImage from "../../assets/service1.jpg";
+import { Link } from "react-router-dom";
 
 const PageThree = () => {
   return (
@@ -24,7 +25,9 @@ const PageThree = () => {
             خدمات التخليص الجمركي وإنهاء كافة الإجراءات واستصدار الترخيصات
             اللازمة، كل ذلك نوفره لك في وقت قياسي وبأسعار تنافسية.
           </p>
+          <Link to='/'>
           <button>اطلب عرض مخصص</button>
+          </Link>
         </div>
       </section>
       <Footer />

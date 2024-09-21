@@ -10,9 +10,11 @@ const Footer = () => {
     <footer className="footer">
       <div className="input-group">
         <input type="text" className="form-input" placeholder="اطلب عرض مخصص" />
+        <Link to="/">
         <button className="btn" type="button">
           اطلب عرض سعر
         </button>
+        </Link>
       </div>
 
       <div className="footer-section content-section">

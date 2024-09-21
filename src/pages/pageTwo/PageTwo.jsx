@@ -2,6 +2,7 @@ import Footer from "../../components/Footer/Footer";
 import PageNavbar from "../pageOne/PageNavbar";
 import "./PageTwo.css";
 import pageImage from "../../assets/service2.jpg";
+import { Link } from "react-router-dom";
 
 const PageTwo = () => {
   return (
@@ -31,7 +32,9 @@ const PageTwo = () => {
               <li>التخزين الامن</li>
             </ul>
           </p>
+          <Link to='/'>
           <button>اطلب عرض مخصص</button>
+          </Link>
         </div>
       </section>
       <Footer />
