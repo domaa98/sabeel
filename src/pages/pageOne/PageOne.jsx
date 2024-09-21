@@ -1,7 +1,7 @@
 import Footer from "../../components/Footer/Footer";
 import PageNavbar from "./PageNavbar";
 import "./PageOne.css";
-import pageImage from '../../assets/photo3.jpg'
+import pageImage from '../../assets/service3.jpg'
 
 const PageOne = () => {
   return (

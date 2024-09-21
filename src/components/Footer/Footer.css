@@ -53,6 +53,7 @@
     display: flex;
     gap: 15px;
     margin-bottom: 15px;
+    flex-direction: row-reverse;
 }
 
 .footer-section .links a {

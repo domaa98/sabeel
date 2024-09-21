@@ -59,8 +59,8 @@
 
 @media (min-width: 780px) and (max-width: 950px) {
     .thirdSection .mainImage img{
-       
-        padding: 30px;
+
+        height: 400px;
        
     }
 }
@@ -79,8 +79,8 @@
         
     }
     .thirdSection .mainImage img{
-       
-        padding: 20px;
+
+        height: 400px;
        
     }
 
@@ -104,6 +104,12 @@
 
 
 @media (max-width: 555px) {
+
+    .thirdSection .mainImage img{
+
+        height: 250px;
+       
+    }
     .ourVision .start , .ourVision .vision , .ourVision .message{
         display: flex;
         flex-direction: column-reverse;

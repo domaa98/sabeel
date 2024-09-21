@@ -1,6 +1,6 @@
 import './FormSection.css'
 import { useState } from 'react';
-import cardphoto from "../../assets/cardphoto.jpg";
+import formimage from "../../assets/fourthsection.jpg";
 
 const FormSection = () => {
 
@@ -29,7 +29,7 @@ const FormSection = () => {
     <div className="containerr" id='Contact_us'>
       <div className="section image-section">
         <img
-          src={cardphoto}
+          src={formimage}
           alt="Placeholder"
           className="section-image"
         />

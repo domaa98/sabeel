@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './PageNavbar.css';
 import { AiOutlineMenu } from "react-icons/ai";
 import { TfiClose } from "react-icons/tfi";
-import Logo from "../../assets/logo1.jpg";
+import Logo from "../../assets/logoo.png";
 import { Link } from 'react-router-dom';
 
 const PageNavbar = () => {
