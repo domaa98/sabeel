@@ -56,7 +56,7 @@
 @media (max-width: 555px) {
     .card {
         overflow: hidden;
-        max-width: 300px;
+        max-width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -65,5 +65,13 @@
       .title-row h3{
         font-size: 16px;
       }
+      .card-row{
+        width: 100%;
+      }
+
+      .card .card-button{
+        width: 100%;
+      }
+    
     
 }

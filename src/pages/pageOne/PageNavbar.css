@@ -36,7 +36,7 @@ a {
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
-    padding: 0 50px;
+    padding: 0 20px;
   }
   
   .linkss {
@@ -71,6 +71,7 @@ a {
   @media (max-width: 990px) {
     .navbar-content {
       justify-content: space-between;
+      padding: 0 20px;
     }
     .linkss {
         margin-right: 60px;
@@ -79,6 +80,10 @@ a {
   }
   
   @media (max-width: 880px) {
+    .navbar-content {
+      justify-content: space-between;
+      padding: 0 20px;
+    }
    
     .linkss {
         margin-right: 40px;
@@ -99,6 +104,10 @@ a {
   }
 
   @media (max-width: 767px) {
+    .navbar-content {
+      justify-content: space-between;
+      padding: 0 20px;
+    }
     .linkss {
       display: none;
     }
@@ -111,7 +120,7 @@ a {
       font-size: 30px;
       background-color: white;
       top: 30px;
-      left: 50px;
+      left: 20px;
       cursor: pointer;
       align-items: center;
       justify-content: center;

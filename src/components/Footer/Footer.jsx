@@ -27,9 +27,15 @@ const Footer = () => {
           <Link to="/">
             <a href="#Home">الرئيسية</a>
           </Link>
+          <Link to="/">
           <a href="#Services">الخدمات</a>
+          </Link>
+          <Link to="/">
           <a href="#About_us">من نحن</a>
+          </Link>
+          <Link to="/">
           <a href="#Contact_us">تواصل معنا</a>
+          </Link>
         </div>
         <div className="social-media">
           <a href="#facebook" aria-label="Facebook">

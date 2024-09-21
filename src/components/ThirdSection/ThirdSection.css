@@ -13,7 +13,7 @@
 .thirdSection .mainImage img{
     width: 100%;
     height: 600px;
-    padding: 50px;
+    padding: 30px;
     border-radius: 20px;
     object-fit: contain;
 }

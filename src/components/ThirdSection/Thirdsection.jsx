@@ -1,5 +1,5 @@
 import './Thirdsection.css'
-import image from '../../assets/thirdsection.jpg';
+import image from '../../assets/roundedsection.jpg';
 
 const Thirdsection = () => {
   return (
