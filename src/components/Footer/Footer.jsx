@@ -11,7 +11,7 @@ const Footer = () => {
       
       <div className="input-group">
         <input type="text" className="form-input" placeholder="اطلب عرض مخصص" />
-        <Link to="/">
+        <Link to="/#Contact_us">
           <button className="btn" type="button">
             اطلب عرض سعر
           </button>
@@ -19,23 +19,23 @@ const Footer = () => {
       </div>
 
       <div className="footer-section content-section">
-        <Link to="/">
+        <Link to="/#Home">
           <div className="logo">
             <img src={Logo} alt="Logo" />
           </div>
         </Link>
 
         <div className="links">
-          <Link to="/">
+          <Link to="/#Home">
             <a href="#Home">الرئيسية</a>
           </Link>
-          <Link to="/">
+          <Link to="/#Services">
             <a href="#Services">الخدمات</a>
           </Link>
-          <Link to="/">
+          <Link to="/#About_us">
             <a href="#About_us">من نحن</a>
           </Link>
-          <Link to="/">
+          <Link to="/#Contact_us">
             <a href="#Contact_us">تواصل معنا</a>
           </Link>
         </div>

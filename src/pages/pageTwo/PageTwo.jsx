@@ -3,8 +3,16 @@ import PageNavbar from "../pageOne/PageNavbar";
 import "./PageTwo.css";
 import pageImage from "../../assets/service2.jpg";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 const PageTwo = () => {
+
+  useEffect(()=>{
+  
+    window.scrollTo({top:0 , left: 0 ,behavior:'smooth'});
+  
+});
+
   return (
     <div>
       <PageNavbar />
@@ -32,7 +40,7 @@ const PageTwo = () => {
               <li>التخزين الامن</li>
             </ul>
           </p>
-          <Link to='/#contact_us'>
+          <Link to='/#Contact_us'>
           <button>اطلب عرض مخصص</button>
           </Link>
         </div>

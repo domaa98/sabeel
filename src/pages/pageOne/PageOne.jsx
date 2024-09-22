@@ -3,11 +3,16 @@ import PageNavbar from "./PageNavbar";
 import "./PageOne.css";
 import pageImage from '../../assets/service3.jpg'
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 
 const PageOne = () => {
 
-
+  useEffect(()=>{
+  
+       window.scrollTo({top:0 , left: 0 ,behavior:'smooth'});
+     
+ });
 
   return (
     <div>
@@ -28,7 +33,7 @@ const PageOne = () => {
             معايير الجودة، كما نوفر لكم إمكانية تأجير الشاحنات بكل المواصفات
             التي تناسب احتياجاتكم المختلفة.
           </p>
-          <Link to='/#contact_us'>
+          <Link to='/#Contact_us'>
           <button >اطلب عرض مخصص</button>
           </Link>
         </div>

@@ -3,8 +3,16 @@ import PageNavbar from "../pageOne/PageNavbar";
 import "./PageThree.css";
 import pageImage from "../../assets/service1.jpg";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 const PageThree = () => {
+
+  useEffect(()=>{
+  
+    window.scrollTo({top:0 , left: 0 ,behavior:'smooth'});
+  
+});
+
   return (
     <div>
       <PageNavbar />
@@ -25,7 +33,7 @@ const PageThree = () => {
             خدمات التخليص الجمركي وإنهاء كافة الإجراءات واستصدار الترخيصات
             اللازمة، كل ذلك نوفره لك في وقت قياسي وبأسعار تنافسية.
           </p>
-          <Link to='/#contact_us'>
+          <Link to='/#Contact_us'>
           <button>اطلب عرض مخصص</button>
           </Link>
         </div>
