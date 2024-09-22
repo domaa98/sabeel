@@ -4,7 +4,11 @@ import "./PageOne.css";
 import pageImage from '../../assets/service3.jpg'
 import { Link } from "react-router-dom";
 
+
 const PageOne = () => {
+
+
+
   return (
     <div>
       <PageNavbar />
@@ -24,8 +28,8 @@ const PageOne = () => {
             معايير الجودة، كما نوفر لكم إمكانية تأجير الشاحنات بكل المواصفات
             التي تناسب احتياجاتكم المختلفة.
           </p>
-          <Link to='/'>
-          <button>اطلب عرض مخصص</button>
+          <Link to='/#contact_us'>
+          <button >اطلب عرض مخصص</button>
           </Link>
         </div>
       </section> 

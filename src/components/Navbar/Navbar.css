@@ -49,7 +49,11 @@ a {
   }
   .navbar-content .links a {
     color: #fff;
+    transition: all ease-in-out 0.2s;
   }  
+  .navbar-content .links a:hover {
+    color: black;
+  }
   .navbarrr .contact-us {
     display: flex;
     flex: 1;

@@ -7,6 +7,9 @@ import Thirdsection from "../components/ThirdSection/Thirdsection"
 
 
 const Home = () => {
+
+  
+
   return (
     <div className="container">
       

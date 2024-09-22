@@ -32,7 +32,7 @@ const PageTwo = () => {
               <li>التخزين الامن</li>
             </ul>
           </p>
-          <Link to='/'>
+          <Link to='/#contact_us'>
           <button>اطلب عرض مخصص</button>
           </Link>
         </div>

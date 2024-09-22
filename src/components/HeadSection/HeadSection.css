@@ -49,6 +49,13 @@ height: 800px;
   margin: 0 20px;
   cursor: pointer;
   font-size: 20px;
+  transition: all ease-in-out 0.2s;
+}
+
+.headSectionImage .buttons a:hover{
+    background-color: #fff;
+    border: 1px solid #fff;
+    color: black;
 }
 
 
@@ -225,7 +232,7 @@ width: 600px;
         font-size: 22px;
     }
     .headSectionImage .headSectionText2{
-        font-size: 13px;
+        font-size: 14px;
       
     }
 
@@ -257,30 +264,39 @@ width: 600px;
     
     
     .headSectionImage .inputText{
-    
+    border: none;
     margin: 30px 180px;
     padding: 10px 15px;
     border-radius: 40px;
     width: 94%;
     display: flex;
-    gap: 5px;
+    flex-direction: column-reverse;
+    gap: 10px;
+    backdrop-filter: none;
+
     
     }
     
     .headSectionImage .inputText input{
     
-        border-radius: 10px;
+        border-radius: 16px;
         font-size: 14px;
-        width: 50%;
+        width: 100%;
         text-align: right;
+        padding-bottom: 33px;
+        backdrop-filter: blur(8px);
+        border: 1px solid #fff;
+        height: 72px;
+
     }
     
     
     .headSectionImage .inputText a{
-        width: 50%;
-        border-radius: 20px;
+        width: 100%;
+        border-radius: 67px;
         font-size: 14px;
-        padding: 5px 15px;
+        font-weight: 700;
+        padding: 12px 15px;
         text-align: center;
     }
 

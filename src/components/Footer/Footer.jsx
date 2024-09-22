@@ -8,12 +8,13 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="footer">
+      
       <div className="input-group">
         <input type="text" className="form-input" placeholder="اطلب عرض مخصص" />
         <Link to="/">
-        <button className="btn" type="button">
-          اطلب عرض سعر
-        </button>
+          <button className="btn" type="button">
+            اطلب عرض سعر
+          </button>
         </Link>
       </div>
 
@@ -23,20 +24,22 @@ const Footer = () => {
             <img src={Logo} alt="Logo" />
           </div>
         </Link>
+
         <div className="links">
           <Link to="/">
             <a href="#Home">الرئيسية</a>
           </Link>
           <Link to="/">
-          <a href="#Services">الخدمات</a>
+            <a href="#Services">الخدمات</a>
           </Link>
           <Link to="/">
-          <a href="#About_us">من نحن</a>
+            <a href="#About_us">من نحن</a>
           </Link>
           <Link to="/">
-          <a href="#Contact_us">تواصل معنا</a>
+            <a href="#Contact_us">تواصل معنا</a>
           </Link>
         </div>
+
         <div className="social-media">
           <a href="#facebook" aria-label="Facebook">
             <IoLogoFacebook />
@@ -48,6 +51,7 @@ const Footer = () => {
             <FaTwitter />
           </a>
         </div>
+
       </div>
     </footer>
   );
