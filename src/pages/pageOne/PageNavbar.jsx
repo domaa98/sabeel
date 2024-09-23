@@ -29,9 +29,15 @@ const PageNavbar = () => {
             <Link to='/'>
             <a href="#">الرئيسية</a>
             </Link>
+            <Link to='/#Services'>
             <a href="#Services">الخدمات</a>
+            </Link>
+            <Link to='/#About_us'>
             <a href="#About_us">من نحن</a>
+            </Link>
+            <Link to='/#Contact_us'>
             <a href="#Contact_us">تواصل معنا</a>
+            </Link>
           </div>
 
           <div className="contact-us">

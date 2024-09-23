@@ -123,7 +123,18 @@
 @media (max-width: 555px) {
     .containerr {
        flex-direction: column;
+       width: 100%;
+       padding: 20px 0;
       }
+
+      .containerr .image-section {
+        width: 100%;
+        margin: 0;
+       }
+       .containerr .section-image {
+        width: 100%;
+       }
+
       .form-section .first-title{
         font-size: 18px;
       }
