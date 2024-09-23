@@ -1,8 +1,5 @@
 import "./Footer.css";
 import Logo from "../../assets/logoo.png";
-import { IoLogoFacebook } from "react-icons/io5";
-import { FaLinkedin } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -38,18 +35,6 @@ const Footer = () => {
           <Link to="/#Contact_us">
             <a href="#Contact_us">تواصل معنا</a>
           </Link>
-        </div>
-
-        <div className="social-media">
-          <a href="#facebook" aria-label="Facebook">
-            <IoLogoFacebook />
-          </a>
-          <a href="#linkedin" aria-label="Linkedin">
-            <FaLinkedin />
-          </a>
-          <a href="#twitter" aria-label="Twitter">
-            <FaTwitter />
-          </a>
         </div>
 
       </div>
