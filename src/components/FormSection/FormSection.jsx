@@ -3,10 +3,13 @@ import formimage from "../../assets/fourthsection.jpg";
 import emailjs from '@emailjs/browser';
 import { useRef } from 'react';
 import Swal from 'sweetalert2';
+import { useTranslation } from 'react-i18next';
 
 
 const FormSection = () => {
     
+  const [t] = useTranslation("global");
+
   
       const form = useRef();
     
@@ -46,42 +49,42 @@ const FormSection = () => {
         />
       </div>
       <div className="section form-section">
-        <p className='first-title'>نحن لا نقوم فقط بنقل البضائع، بل نبني علاقات طويلة الأمد مع عملائنا</p>
-        <p className='second-title'>تواصل معنا لمعرفة كيف يمكننا أن نكون جزءًا من نجاحك</p>
+        <p className='first-title'>{t("form.formTitle")}</p>
+        <p className='second-title'>{t("form.formParagraph")}</p>
         <form ref={form} onSubmit={handleSubmit}>
           <div>
-            <label htmlFor="name">الاسم بالكامل</label>
+            <label htmlFor="name">{t("form.formName")}</label>
             <input
               type="text"
               id="name"
               name="name"
-              placeholder='ادخل اسمك'
+              placeholder={t("form.formName")}
             
               required
             />
           </div>
           <div>
-            <label htmlFor="phone">رقم الهاتف</label>
+            <label htmlFor="phone">{t("form.formNumber")}</label>
             <input
               type="text"
               id="phone"
               name="phone"
-              placeholder='ادخل رقم الهاتف'
+              placeholder={t("form.formNumber")}
              
               required
             />
           </div>
           <div>
-            <label htmlFor="message">طلبك</label>
+            <label htmlFor="message">{t("form.formOrder")}</label>
             <textarea
               id="message"
               name="message"
-              placeholder='طلبك'
+              placeholder={t("form.formOrder")}
               
               required
             />
           </div>
-          <button type="submit">اطلب عرض</button>
+          <button type="submit">{t("form.formSpecialOrder")}</button>
         </form>
       </div>
     </div>

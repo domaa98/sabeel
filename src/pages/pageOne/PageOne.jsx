@@ -4,9 +4,13 @@ import "./PageOne.css";
 import pageImage from '../../assets/service3.jpg'
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
 
 const PageOne = () => {
+
+  const [t] = useTranslation("global");
+
 
   useEffect(()=>{
   
@@ -22,19 +26,12 @@ const PageOne = () => {
           <img src={pageImage} alt="Description" />
         </div>
         <div className="content-container">
-          <h1>خدمات الشحن اللوجستية المتكاملة</h1>
+          <h1>{t("pageOne.pageOneTitle")}</h1>
           <p>
-            خدمات الشحن المتكاملة البري-بحري-جوي نقدم لكم في SABEEL WAY خدمة شحن
-            شاملة ومرنة تلبي جميع احتياجاتكم من خلال أسطولنا المتكامل، سواء كنت
-            فرد أو شركة، فإننا نضمن لك توصيل شحنتك بأمان وسرعة إلى أي مكان في
-            المملكة. خبرتنا الواسعة في التعامل مع مختلف أنواع الشحنات، بما في
-            ذلك المواد شديدة الخطورة والمواد الغذائية المجمدة، تضمن لك راحة
-            البال التامة. نحن نقدم لك حلاً مخصصاً لاحتياجاتك، مع ضمان أعلى
-            معايير الجودة، كما نوفر لكم إمكانية تأجير الشاحنات بكل المواصفات
-            التي تناسب احتياجاتكم المختلفة.
+          {t("pageOne.pageOneText")}
           </p>
           <Link to='/#Contact_us'>
-          <button >اطلب عرض مخصص</button>
+          <button >{t("pageOne.pageOneOrder")}</button>
           </Link>
         </div>
       </section> 

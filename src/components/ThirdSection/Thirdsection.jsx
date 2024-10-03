@@ -1,7 +1,12 @@
 import './Thirdsection.css'
 import image from '../../assets/roundedsection.jpg';
+import { useTranslation } from 'react-i18next';
 
 const Thirdsection = () => {
+
+  const [t] = useTranslation("global");
+
+
   return (
     <div className='thirdSection' id='About_us'>
 
@@ -13,25 +18,25 @@ const Thirdsection = () => {
 
         <div className='start'>
             
-            <p>سبيل العبور للخدمات اللوجستية هي شركة تأسست في عام 2024 وانطلقت من الرياض في المملكة العربية السعودية، لدينا فريق كبير من أكفأ الموظفين والمسؤولين عن تقديم كافة الخدمات اللوجستية، تميزنا بفضل جهوده بتقديم أفضل حلول سلسلة التوريد والشحن الجوي والبحري والبري وخدمات التوريد بكافة أنواعها. </p>
-            <h4>البداية:</h4>
+            <p>{t("ourVision.textTwo")}</p>
+            <h4>{t("ourVision.textOne")}</h4>
         </div>
 
         <div className='vision'>
              
-             <p>نحن في SABEEL WAY شريكك الموثوق في مجال النقل البري والجوي والبحري وخدمات التوصيل الشاملة في جميع أنحاء المملكة. نلتزم بتقديم حلول نقل مبتكرة وسريعة، مع الحفاظ على أعلى معايير الجودة والأمان لضمان وصول شحنتك بسلامة تامة وفي الوقت المحدد. نعتمد على فريق عمل سعودي متكامل من ذوي الخبرة والكفاءة، يعملون بروح الفريق الواحد لتحقيق رضا عملائنا. نسعى باستمرار إلى التطوير والنمو، لتعزيز مكانتنا الرائدة في قطاع النقل اللوجستي بالمملكة.</p>
-             <h4>رؤيتنا:</h4>
+             <p>{t("ourVision.textFour")}</p>
+             <h4>{t("ourVision.textThree")}</h4>
         </div>
 
         <div className='message'>
             
-            <p>تقديم الخدمات اللوجستية المتكاملة بكفاءة كبيرة وبحلول مبتكرة ومتجددة، مع تحقيق الرضاء الكامل لعملائنا.</p>
-            <h4>رسالتنا:</h4>
+            <p>{t("ourVision.textSix")}</p>
+            <h4>{t("ourVision.textFive")}</h4>
         </div>
       </div>
 
       <div className="ourGoal">
-        <h3>سرعة في الشحن .. أسعار تنافسية .. شحن إلى جميع أنحاء المملكة</h3>
+        <h3>{t("ourVision.textSeven")}</h3>
       </div>
     </div>
   )

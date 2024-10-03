@@ -1,0 +1,64 @@
+{
+    "header": {
+      "main": "Home",
+      "services": "Services",
+      "aboutUs": "?Who are we",
+      "contactUs": "Contact us"
+    },
+    "home": {
+      "firstText": "SABEEL WAY Your highway",
+      "secondText": "To the world",
+      "thirdText": "Welcome to the ideal place to obtain integrated logistical services",
+      "firsbutton": "By air",
+      "secondbutton": "By sea",
+      "thirdbutton": "overland",
+      "order": "Request a quote",
+      "specialOrder": "Request a custom offer"
+    },
+    "services": {
+      "mainTitle": "Our services",
+      "firstText": "customs clearance",
+      "secondText": "Packing, storage and packaging",
+      "thirdText": "Integrated shipping logistics services",
+      "firsbutton": "Learn more"
+    },
+    "ourVision": {
+      "textOne": "the beginning:",
+      "textTwo": "Sabeel Al Obour Logistics Services is a company founded in 2024 and launched from Riyadh in the Kingdom of Saudi Arabia. We have a large team of the most efficient employees responsible for providing all logistical services. Thanks to his efforts, we have distinguished ourselves by providing the best supply chain solutions, air, sea and land freight, and supply services of all kinds.",
+      "textThree": "Our vision:",
+      "textFour": "We at SABEEL WAY are your reliable partner in the field of land, air and sea transportation and comprehensive delivery services throughout the Kingdom. ",
+      "textFive": "Our message:",
+      "textSix": "Providing integrated logistics services with great efficiency and innovative and innovative solutions, while achieving complete satisfaction for our customers.",
+      "textSeven": "Fast shipping. Competitive prices. Shipping to all parts of the Kingdom"
+    },
+    "form": {
+      "formTitle": "We don't just move goods, we build long-term relationships with our customers",
+      "formParagraph": "Contact us to find out how we can be part of your success",
+      "formName": "Full name",
+      "formNumber": "phone number",
+      "formOrder": "Your order",
+      "formSpecialOrder": "Request a quote"
+    },
+    "pageOne": {
+      "pageOneTitle": "Integrated shipping logistics services",
+      "pageOneText": "Integrated shipping services by land, sea, and air. At SABEEL WAY, we offer you a comprehensive and flexible shipping service that meets all your needs through our integrated fleet. Whether you are an individual or a company, we guarantee that your shipment will be delivered safely and quickly to anywhere in the Kingdom. ",
+      "pageOneOrder": "Request a custom offer"
+    },
+    "pageTwo": {
+      "pageTwoTitle": "Packing, storage and packaging services",
+      "pageTwoText": "Looking for a reliable company to pack and store your items? ",
+      "services": "Service includes:",
+      "service1": "Furniture storage",
+      "service2": "Caching",
+      "service3": "Storage units",
+      "service4": "Moving furniture",
+      "service5": "Packaging of items",
+      "service6": "Safe storage",
+      "pageTwoOrder": "Request a custom offer"
+    },
+    "pageThree": {
+      "pageThreeTitle": "Customs clearance services",
+      "pageThreeText": "Transport is the most important logistical service, so in order to cross Saudi Arabia, we provide all customs clearance services and transport all your goods by various means of sea, land and air transport. We also offer you special offers in terms of services and prices that meet the requirements of good performance and obtain your satisfaction. We deal with various shipping companies and provide you with a shipment clearance service. ",
+      "pageThreeOrder": "Request a custom offer"
+    }
+  }

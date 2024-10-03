@@ -4,8 +4,13 @@ import { AiOutlineMenu } from "react-icons/ai";
 import { TfiClose } from "react-icons/tfi";
 import Logo from "../../assets/logoo.png";
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const PageNavbar = () => {
+
+  const [t] = useTranslation("global");
+
+
   const [openMenu, setOpenMenu] = useState(false);
   const toggleMenu = () => {
     setOpenMenu(!openMenu);
@@ -27,21 +32,21 @@ const PageNavbar = () => {
           </div>
           <div className="linkss">
             <Link to='/'>
-            <a href="#">الرئيسية</a>
+            <a href="#">{t("header.main")}</a>
             </Link>
             <Link to='/#Services'>
-            <a href="#Services">الخدمات</a>
+            <a href="#Services">{t("header.services")}</a>
             </Link>
             <Link to='/#About_us'>
-            <a href="#About_us">من نحن</a>
+            <a href="#About_us">{t("header.aboutUs")}</a>
             </Link>
             <Link to='/#Contact_us'>
-            <a href="#Contact_us">تواصل معنا</a>
+            <a href="#Contact_us">{t("header.contactUs")}</a>
             </Link>
           </div>
 
           <div className="contact-us">
-            <a href="#Contact_us">تواصل معنا</a>
+            <a href="#Contact_us">{t("header.contactUs")}</a>
           </div>
         </div>
       </div>
@@ -50,11 +55,11 @@ const PageNavbar = () => {
         {openMenu ? (
           <div className="links-drop-down">
             <Link to='/'>
-            <a href="#Home">الرئيسية</a>
+            <a href="#Home">{t("header.main")}</a>
             </Link>
-            <a href="#Services">الخدمات</a>
-            <a href="#About_us">من نحن</a>
-            <a href="#Contact_us">تواصل معنا</a>
+            <a href="#Services">{t("header.services")}</a>
+            <a href="#About_us">{t("header.aboutUs")}</a>
+            <a href="#Contact_us">{t("header.contactUs")}</a>
 
           </div>
         ) : null}

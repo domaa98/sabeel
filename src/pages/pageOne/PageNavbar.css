@@ -104,6 +104,15 @@ a {
   }
 
   @media (max-width: 767px) {
+
+    .navbarr .navbar-content .img{
+      position: absolute;
+      width: 125px;
+      height: 70px;
+      top: 20px;
+      right: 20px;
+    }
+
     .navbar-content {
       justify-content: space-between;
       padding: 0 20px;

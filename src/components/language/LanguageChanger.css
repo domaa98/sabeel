@@ -1,0 +1,14 @@
+.langContainer{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+
+}
+
+.langContainer button{
+    width: 100px;
+}
+

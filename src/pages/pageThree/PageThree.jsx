@@ -4,8 +4,11 @@ import "./PageThree.css";
 import pageImage from "../../assets/service1.jpg";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
 const PageThree = () => {
+
+  const [t] = useTranslation("global");
 
   useEffect(()=>{
   
@@ -21,20 +24,12 @@ const PageThree = () => {
           <img src={pageImage} alt="Description" />
         </div>
         <div className="content-container">
-          <h1>خدمات التخليص الجمركي</h1>
+          <h1>{t("pageThree.pageThreeTitle")}</h1>
           <p>
-            يعد النقل أهم الخدمات اللوجستية لذا نقوم في سبيل العبورالسعودية
-            بكافة خدمات التخليص الجمركي ونقل جميع بضائعكم بمختلف وسائل النقل
-            البحري والبري والجوي، كما نقدم لكم عروض خاصة من حيث الخدمات والأسعار
-            التي تلبي متطلبات الأداء الجيد وتنال رضاكم نتعامل مع شركات الشحن
-            المختلفة ونقدم لك خدمة تخليص الشحنات المرسلة مع أي من هذه الشركات،
-            كما نقدم كافة الاستشارات الجمركية وﺗﺤﺪﻳﺪ ﺑﻨﺪ اﻟﺘﻌﺮﻓﺔ اﻟﺠﻤﺮﻛﻴﺔ
-            ﻟﻠﻤﻨﺘﺠﺎت اﻟﺨﺎﺿﻌﺔ ﻟﻠﺠﻤﺎرك. الآن يمكنك مع SABEEL WAY الحصول على كافة
-            خدمات التخليص الجمركي وإنهاء كافة الإجراءات واستصدار الترخيصات
-            اللازمة، كل ذلك نوفره لك في وقت قياسي وبأسعار تنافسية.
+          {t("pageThree.pageThreeText")}
           </p>
           <Link to='/#Contact_us'>
-          <button>اطلب عرض مخصص</button>
+          <button>{t("pageThree.pageThreeOrder")}</button>
           </Link>
         </div>
       </section>
